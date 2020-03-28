@@ -41,7 +41,7 @@ public class Partida {
 		this.setDataPartida(new Date());//Pega a data e hora atual para a partida.
 		
 		Random random = new Random();
-		this.scoreVisitante = random.nextInt(10);//Gera n˙meros aleatÛrios de 0 - 10.
+		this.scoreVisitante = random.nextInt(10);//Gera n√∫meros aleat√≥rios de 0 - 10.
 		this.scoreLocal = random.nextInt(10);
 	}
 	
@@ -52,7 +52,7 @@ public class Partida {
 	
 	public void finalizarPartida()
 	{
-		if(this.scoreVisitante > this.scoreLocal)//Caso o time visitante venÁa.
+		if(this.scoreVisitante > this.scoreLocal)//Caso o time visitante ven√ßa.
 		{
 			this.timeVisitante.setQtdVitorias(1);
 			this.timeVisitante.setQtdPontos(3);
@@ -64,7 +64,7 @@ public class Partida {
 			this.timeLocal.setQtdPontos(3);
 			this.timeVisitante.setQtdDerrotas(1);
 		}
-		else										  //Caso empate a partida.
+		else					      //Caso empate a partida.
 		{
 			this.timeLocal.setQtdEmpates(1);
 			this.timeVisitante.setQtdEmpates(1);
