@@ -8,20 +8,20 @@ public class Tester {
 		// TODO Auto-generated method stub
 		
 		Time[] times = new Time[6];
-		Scanner ler = new Scanner(System.in);//Objeto usado para receber os nomes dos time do usu�rio.
+		Scanner ler = new Scanner(System.in);//Objeto usado para receber os nomes dos time do usuário.
 		String TimeNome1;
 		String TimeNome2;
 		int i;
 		Scanner scanner = new Scanner(System.in);//Objeto usado para receber a tecla enter.
 		
-		System.out.println("Iniciando as partidas da Rodada do Brasileir�o");
+		System.out.println("Iniciando as partidas da Rodada do Brasileirão");
 			for(i=1;i<=3;i++)
 			{
 				Time Time1 = null;
 				Time Time2 = null;
 				int j;
 				
-				System.out.println("Vai come�ar a partida N�mero " + i);
+				System.out.println("Vai começar a partida Número " + i);
 				System.out.println("Entre com o nome do time Local: ");
 				TimeNome1 = ler.nextLine();
 				System.out.println("Entre com o nome do time visitante: ");
