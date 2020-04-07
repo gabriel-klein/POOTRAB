@@ -75,7 +75,8 @@ public class Tester {
 			System.out.println("-----------------------------------FIM DA RODADA---------------------------------------\n"+
 							   "Integrantes do grupo: "+
 							   "Gabriel Nunes Klein, João Victor Cruz\n" +
-							   "Github: https://github.com/gabriel-klein/POOTRAB");
+							   "Github: https://github.com/gabriel-klein/POOTRAB\n"+
+							   "Link do vídeo: https://www.youtube.com/watch?v=m1oBUQNXBFQ");
 		
 		}
 
