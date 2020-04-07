@@ -7,12 +7,13 @@ public class Time {
 	private int qtdDerrotas;
 	private int qtdPontos;
 	
-	public Time()//Gera um time "zerado".
+	public Time(String nome)//Gera um time "zerado".
 	{
-		setQtdDerrotas(0);
-		setQtdEmpates(0);
-		setQtdPontos(0);
-		setQtdVitorias(0);
+		this.nome = nome;
+		this.qtdVitorias = 0;
+		this.qtdEmpates = 0;
+		this.qtdDerrotas = 0;
+		this.qtdPontos = 0;
 	}
 	
 	public String getNome() {
@@ -27,32 +28,31 @@ public class Time {
 		return qtdVitorias;
 	}
 	
-	public void setQtdVitorias(int qtdVitorias) {
-		this.qtdVitorias = this.qtdVitorias + qtdVitorias;
+	public void ganhar() {
+		this.qtdVitorias += 1;
+		this.qtdPontos += 3;
 	}
 	
 	public int getQtdEmpates() {
 		return qtdEmpates;
 	}
 	
-	public void setQtdEmpates(int qtdEmpates) {
-		this.qtdEmpates = this.qtdEmpates + qtdEmpates;
+	public void empatar() {
+		this.qtdEmpates += 1;
+		this.qtdPontos += 1;
 	}
 	
 	public int getQtdPontos() {
 		return qtdPontos;
 	}
 	
-	public void setQtdPontos(int qtdPontos) {
-		this.qtdPontos = this.qtdPontos + qtdPontos;
-	}
 	
 	public int getQtdDerrotas() {
 		return qtdDerrotas;
 	}
 	
-	public void setQtdDerrotas(int qtdDerrotas) {
-		this.qtdDerrotas = this.qtdDerrotas + qtdDerrotas;
+	public void perder() {
+		this.qtdDerrotas += 1;
 	}
 	
 	public void listar()

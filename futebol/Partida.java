@@ -54,22 +54,18 @@ public class Partida {
 	{
 		if(this.scoreVisitante > this.scoreLocal)//Caso o time visitante vença.
 		{
-			this.timeVisitante.setQtdVitorias(1);
-			this.timeVisitante.setQtdPontos(3);
-			this.timeLocal.setQtdDerrotas(1);
+			this.timeVisitante.ganhar();
+			this.timeLocal.perder();
 		}
 		else if(this.scoreVisitante < this.scoreLocal)//Caso o time visitante perca.
 		{
-			this.timeLocal.setQtdVitorias(1);
-			this.timeLocal.setQtdPontos(3);
-			this.timeVisitante.setQtdDerrotas(1);
+			this.timeLocal.ganhar();
+			this.timeVisitante.perder();
 		}
 		else					      //Caso empate a partida.
 		{
-			this.timeLocal.setQtdEmpates(1);
-			this.timeVisitante.setQtdEmpates(1);
-			this.timeLocal.setQtdPontos(1);
-			this.timeVisitante.setQtdPontos(1);
+			this.timeLocal.empatar();
+			this.timeVisitante.empatar();
 		}
 	}
 
